@@ -1,0 +1,56 @@
+h2{
+  color: #1976d2;
+  text-align: center;
+}
+
+.blue-form {
+  background-color: #f0f5ff;
+  padding: 20px;
+  border-radius: 10px;
+  border: 2px solid #1976d2;
+  width: 400px;
+  margin: auto;
+}
+
+.blue-form mat-form-field {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.blue-form mat-form-field:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.blue-form button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blue-form button:hover {
+  background-color: #1767c1af;
+}
+
+.blue-form button[type="submit"] {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-left: 157px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.blue-form button[type="submit"]:hover {
+  background-color: #1767c1af;
+}
+
+.addANewJobB{
+  padding-right: 6px;
+}
+.removeB{
+  margin-bottom: 2.5px;
+}

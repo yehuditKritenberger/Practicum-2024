@@ -1,0 +1,79 @@
+<!-- <div class="button-row">
+  <mat-form-field class="example-full-width">
+    <mat-icon class="iconS" aria-hidden="false" aria-label="Example search icon" fontIcon="search"></mat-icon>
+    <input matInput (keyup)="applyFilter($event)" class="filterI" placeholder="  Search" #input>
+  </mat-form-field>
+  <div class="buttons-right">
+    <div class="buttonX">
+      <button mat-raised-button color="primary" (click)="exportToExcel()" class="btn btn-primary mr-2"
+        title="Export to Excel">
+        <mat-icon class="iconD" aria-hidden="false" aria-label="Example download icon" fontIcon="download"></mat-icon>
+        Export to Excel</button>
+    </div>
+    <div class="buttonD">
+      <button mat-raised-button color="primary" (click)="addEmployee()">
+        <mat-icon class="" aria-hidden="false" aria-label="Example add icon" fontIcon="add"></mat-icon>
+        To add Employee</button>
+    </div>
+  </div>
+</div> -->
+<h1>All Employees</h1>
+<div class="button-row">
+  <mat-form-field class="full-width">
+    <mat-icon class="iconS" aria-hidden="false" aria-label="Example search icon" fontIcon="search"></mat-icon>
+    <input matInput (keyup)="applyFilter($event)" class="filterI" placeholder="  Search" #input>
+  </mat-form-field>
+
+  <div class="buttons-container">
+    <button mat-raised-button color="primary" (click)="exportToExcel()" class="btn btn-primary mr-2"
+            title="Export to Excel">
+      <mat-icon class="iconD" aria-hidden="false" aria-label="Example download icon" fontIcon="download"></mat-icon>
+      Export to Excel
+    </button>
+    <button mat-raised-button color="primary" (click)="addEmployee()">
+      <mat-icon class="" aria-hidden="false" aria-label="Example add icon" fontIcon="add"></mat-icon>
+      To add Employee
+    </button>
+  </div>
+</div>
+
+<div class="tableM">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+    <ng-container matColumnDef="firstName">
+      <th mat-header-cell *matHeaderCellDef> First name </th>
+      <td mat-cell *matCellDef="let element"> {{element.firstName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="lastName">
+      <th mat-header-cell *matHeaderCellDef> Last name </th>
+      <td mat-cell *matCellDef="let element"> {{element.lastName}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="tz">
+      <th mat-header-cell *matHeaderCellDef> TZ </th>
+      <td mat-cell *matCellDef="let element"> {{element.tz}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="dateOfBirth">
+      <th mat-header-cell *matHeaderCellDef> Date of birth </th>
+      <td mat-cell *matCellDef="let element"> {{element.dateOfBirth | date:'dd-MM-yyyy'}} </td>
+    </ng-container>
+
+    <ng-container matColumnDef="additionalActions">
+      <th mat-header-cell *matHeaderCellDef> Additional actions </th>
+      <td mat-cell *matCellDef="let element">
+        <mat-icon class="icon" aria-hidden="false" aria-label="Example edit icon" fontIcon="edit"
+          (click)="editEmployee(element.id)"></mat-icon>
+        <mat-icon class="icon" aria-hidden="false" aria-label="Example delete icon" fontIcon="delete"
+          (click)="delete(element.id)"></mat-icon>
+      </td>
+    </ng-container>
+
+    <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+    <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+
+    <tr class="mat-row" *matNoDataRow>
+      <td class="mat-cell" colspan="4">No data matching the filter "{{input.value}}"</td>
+    </tr>
+  </table>
+</div>

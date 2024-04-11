@@ -1,0 +1,15 @@
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\bin\Debug\net6.0\Mng.Service.deps.json
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\bin\Debug\net6.0\Mng.Service.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\bin\Debug\net6.0\Mng.Service.pdb
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\bin\Debug\net6.0\Mng.Core.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\bin\Debug\net6.0\Mng.Core.pdb
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.csproj.AssemblyReference.cache
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.GeneratedMSBuildEditorConfig.editorconfig
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.AssemblyInfoInputs.cache
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.AssemblyInfo.cs
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.csproj.CoreCompileInputs.cache
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.csproj.CopyComplete
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\refint\Mng.Service.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\Mng.Service.pdb
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Service\obj\Debug\net6.0\ref\Mng.Service.dll

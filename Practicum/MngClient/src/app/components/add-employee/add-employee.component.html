@@ -1,0 +1,70 @@
+<form [formGroup]="formGroup" (ngSubmit)="onSubmit()" class="blue-form">
+    <h2>Adding a employee</h2>
+    <mat-form-field class="example-full-width">
+        <mat-label>First name</mat-label>
+        <input matInput placeholder="First name" formControlName="firstName">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Last name</mat-label>
+        <input matInput placeholder="Last name" formControlName="lastName">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>TZ</mat-label>
+        <input matInput placeholder="TZ" formControlName="tz">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+        <mat-label>Date of birth</mat-label>
+        <input matInput [matDatepickerFilter]="filterdateOfBirth" [matDatepicker]="dateOfBirth" formControlName="dateOfBirth">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="dateOfBirth"></mat-datepicker-toggle>
+        <mat-datepicker #dateOfBirth></mat-datepicker>
+      </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Gander</mat-label>
+        <mat-select formControlName="gander">
+            <mat-option [value]="0">Male</mat-option>
+            <mat-option [value]="1">Female</mat-option>
+        </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+        <mat-label>Start of work date</mat-label>
+        <input matInput [matDatepickerFilter]="filterbeginningOfWork" [matDatepicker]="beginningOfWork"
+            formControlName="beginningOfWork">
+        <mat-hint>MM/DD/YYYY</mat-hint>
+        <mat-datepicker-toggle matIconSuffix [for]="beginningOfWork"></mat-datepicker-toggle>
+        <mat-datepicker #beginningOfWork></mat-datepicker>
+    </mat-form-field>
+
+    <div formArrayName="employeeRoles" *ngFor="let role of rolesFormArray.controls; let i = index">
+        <div [formGroupName]="i">
+            <label>Job details : {{ i + 1 }}</label><br>
+            <mat-form-field>
+                <mat-label>Job title</mat-label>
+                <mat-select formControlName="jobTitle">
+                    <mat-option *ngFor="let jobTitle of jobTitles" value="jobTitle.id">{{ jobTitle.name}}
+                    </mat-option>
+                </mat-select>
+            </mat-form-field>
+            <br>
+            <mat-form-field>
+                <mat-label>Is it managerial?</mat-label>
+                <mat-select formControlName="isManagement">
+                    <mat-option [value]="true">Yes</mat-option>
+                    <mat-option [value]="false">No</mat-option>
+                </mat-select>
+            </mat-form-field>
+              <mat-form-field class="example-full-width">
+                <mat-label>Date of entry to work</mat-label>
+                <input matInput [matDatepickerFilter]="filterdateOfEntryToWork" [matDatepicker]="dateOfEntryToWork" formControlName="dateOfEntryToWork">
+                <mat-hint>MM/DD/YYYY</mat-hint>
+                <mat-datepicker-toggle matIconSuffix [for]="dateOfEntryToWork"></mat-datepicker-toggle>
+                <mat-datepicker #dateOfEntryToWork></mat-datepicker>
+            </mat-form-field>
+            <button mat-button type="button" class="removeB" (click)="removeThisJob(i)">Remove this job</button>
+        </div>
+    </div>
+    <button mat-button type="button" class="addANewJobB" (click)="addNewJob()">Add a new role</button>
+    <button mat-button type="submit">Submit</button>
+</form>

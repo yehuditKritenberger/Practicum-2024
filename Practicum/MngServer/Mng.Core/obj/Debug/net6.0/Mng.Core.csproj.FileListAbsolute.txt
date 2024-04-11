@@ -1,0 +1,12 @@
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\bin\Debug\net6.0\Mng.Core.deps.json
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\bin\Debug\net6.0\Mng.Core.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\bin\Debug\net6.0\Mng.Core.pdb
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.csproj.AssemblyReference.cache
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.AssemblyInfoInputs.cache
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.AssemblyInfo.cs
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.csproj.CoreCompileInputs.cache
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\refint\Mng.Core.dll
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\Mng.Core.pdb
+D:\שנה ב\פרקטיקום\Practicum\MngServer\Mng.Core\obj\Debug\net6.0\ref\Mng.Core.dll
